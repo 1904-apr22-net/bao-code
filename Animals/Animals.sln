@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.202
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Animals.UI", "Animals.UI\Animals.UI.csproj", "{16019098-53CF-481C-B04A-F4688A4C9392}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Animals.Library", "Animals.Library\Animals.Library.csproj", "{CE939CA4-B5E9-441D-B3CC-75211A22303E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{16019098-53CF-481C-B04A-F4688A4C9392}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16019098-53CF-481C-B04A-F4688A4C9392}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16019098-53CF-481C-B04A-F4688A4C9392}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16019098-53CF-481C-B04A-F4688A4C9392}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE939CA4-B5E9-441D-B3CC-75211A22303E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE939CA4-B5E9-441D-B3CC-75211A22303E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE939CA4-B5E9-441D-B3CC-75211A22303E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE939CA4-B5E9-441D-B3CC-75211A22303E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9FEEE199-7723-4B34-ACAB-D6AE2A1D1E19}
+	EndGlobalSection
+EndGlobal
