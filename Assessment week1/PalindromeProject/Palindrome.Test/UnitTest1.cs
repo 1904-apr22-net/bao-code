@@ -8,16 +8,16 @@ namespace Palindrome.Test
     {
         [Theory]
         [InlineData("abc")]
-        [InlineData("")]
+        [InlineData("")] // this test should return true if length = 0
         [InlineData("racecaR")]
         [InlineData("race. Car*")]
         public void isPalindromeShouldReturnTrueOrFalse(string words)
         {
             //arange
-            var c = new palindrome();
+            var c = new PalindromeClass();
 
             //act
-            var result = c.isPalindrome(words);
+            var result = c.IsPalindrome(words);
 
             //assert
             Assert.IsType<bool>(result);
@@ -27,10 +27,10 @@ namespace Palindrome.Test
         public void ShouldRemoveNonAlphabetChar()
         {
             //arrange
-            var c = new palindrome();
+            var c = new PalindromeClass();
 
             //act
-            string word = c.removeNonAlphabetChar("race. Car");
+            string word = c.RemoveNonAlphabetChar("race. Car");
 
             //assert
             Assert.Equal("raceCar", word);

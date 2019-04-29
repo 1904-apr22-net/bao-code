@@ -1,15 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text;
 
 namespace Palindrome.Library
 {
-    public class palindrome
+    public class PalindromeClass
     {
-        public palindrome()
-        {
-
-        }
-        public bool isPalindrome(string str)
+        public bool IsPalindrome(string str)
         {
             if (str.Length == 0)
             {
@@ -17,11 +14,11 @@ namespace Palindrome.Library
             }
 
             str = str.ToLower();
-            str = removeNonAlphabetChar(str);
+            str = RemoveNonAlphabetChar(str);
 
             for (int i = 0; i < str.Length / 2; i++)
             {
-                if (str[i] != str[str.Length - (i+1)])
+                if (str[i] != str[str.Length - (i + 1)])
                 {
                     return false;
                 }
@@ -29,7 +26,7 @@ namespace Palindrome.Library
             return true;
         }
 
-        public string removeNonAlphabetChar(string str)
+        public string RemoveNonAlphabetChar(string str)
         {
             string word = "";
 
@@ -37,7 +34,7 @@ namespace Palindrome.Library
             {
                 if (char.IsLetter(str[i]))
                 {
-                    word = word + str[i];
+                    word += str[i];
                 }
             }
             return word;
