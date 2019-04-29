@@ -21,7 +21,7 @@ namespace Palindrome.Library
 
             for (int i = 0; i < str.Length / 2; i++)
             {
-                if (str[i] != str[str.Length - 1])
+                if (str[i] != str[str.Length - (i+1)])
                 {
                     return false;
                 }
@@ -31,18 +31,16 @@ namespace Palindrome.Library
 
         public string removeNonAlphabetChar(string str)
         {
-            char[] charOfWord = str.ToCharArray();
-            List<char> words = new List<char>();
+            string word = "";
 
-            for (int i = 0; i < charOfWord.Length; i++)
+            for (int i = 0; i < str.Length; i++)
             {
-                if (char.IsLetter(charOfWord[i]))
+                if (char.IsLetter(str[i]))
                 {
-                    words.Add(charOfWord[i]);
+                    word = word + str[i];
                 }
             }
-
-            return words.ToString();
+            return word;
         }
     }
 }

@@ -1,4 +1,4 @@
-using Palindrome.Library;
+using palindrome.Library;
 using System;
 using Xunit;
 
@@ -13,7 +13,7 @@ namespace Palinedrome.Test
         public void isPalindromeShouldReturnTrueOrFalse(string words, params string[] values)
         {
             //arange
-            var c = new Palindrome();
+            var c = new palindrome();
 
 
         }

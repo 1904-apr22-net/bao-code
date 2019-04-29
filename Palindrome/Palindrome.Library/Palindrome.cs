@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Palindrome.Library
+namespace palindrome.Library
 {
-    public class Palindrome
+    public class palindrome
     {
         public bool isPalindrome(string str)
         {
