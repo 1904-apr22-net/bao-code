@@ -3,8 +3,12 @@ using System.Collections.Generic;
 
 namespace Palindrome.Library
 {
-    public class Palindrome
+    public class palindrome
     {
+        public Palindrome(IEnumerable<string> coll)
+        {
+
+        }
         public bool isPalindrome(string str)
         {
             if (str.Length == 0)
