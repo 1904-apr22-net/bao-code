@@ -9,7 +9,7 @@ namespace Palindrome.Test
         [Theory]
         [InlineData("abc", "hello", "madam")]
         [InlineData("")]
-        [InlineData("racecaR","nurses run")]
+        [InlineData("racecaR","nurses run", "race. car")]
         public void isPalindromeShouldReturnTrueOrFalse(string words, params string[] values)
         {
             //arange
@@ -18,9 +18,10 @@ namespace Palindrome.Test
             //act
             var result = c.isPalindrome(words);
 
+            //assert
+            Assert.True(result);
         }
 
-        [Fact]
 
     }
 }
