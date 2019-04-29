@@ -5,7 +5,7 @@ namespace Palindrome.Library
 {
     public class palindrome
     {
-        public Palindrome(IEnumerable<string> coll)
+        public palindrome()
         {
 
         }

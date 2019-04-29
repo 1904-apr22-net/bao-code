@@ -13,8 +13,10 @@ namespace Palindrome.Test
         public void isPalindromeShouldReturnTrueOrFalse(string words, params string[] values)
         {
             //arange
-            var c = new palindrome(values);
+            var c = new palindrome();
 
+            //act
+            var result = c.isPalindrome(words);
 
         }
 
