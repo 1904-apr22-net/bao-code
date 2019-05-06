@@ -8,9 +8,10 @@ namespace Palindrome.Test
     {
         [Theory]
         [InlineData("abc")]
-        [InlineData("")] // this test should return true if length = 0
+        [InlineData("")]
         [InlineData("racecaR")]
         [InlineData("race. Car*")]
+        [InlineData(null)]
         public void isPalindromeShouldReturnTrueOrFalse(string words)
         {
             //arange
@@ -30,7 +31,7 @@ namespace Palindrome.Test
             var c = new PalindromeClass();
 
             //act
-            string word = c.RemoveNonAlphabetChar("race. Car");
+            string word = c.RemoveNonAlphabetChar("race. Car%^&%*^3201239-9");
 
             //assert
             Assert.Equal("raceCar", word);

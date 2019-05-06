@@ -8,9 +8,9 @@ namespace Palindrome.Library
     {
         public bool IsPalindrome(string str)
         {
-            if (str.Length == 0)
+            if (str == null)
             {
-                return true;
+                return false;
             }
 
             str = str.ToLower();
